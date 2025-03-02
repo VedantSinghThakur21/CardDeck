@@ -36,4 +36,10 @@ class Deck {
         }
         System.out.println("Card not found!");
     }
+
+    //Shuffle the Deck
+    public void shuffleDeck() {
+        Collections.shuffle(deck);
+        System.out.println("Card Deck shuffled successfully.");
+    }
 }
