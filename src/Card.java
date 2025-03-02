@@ -1,11 +1,12 @@
 import java.util.*;
 
-public class Card {
-    ArrayList<Card> deck;
-    Random random;
+class Card {
+    String rank;
+    String suit;
 
-    public Deck() {
-
+    public Card(String rank, String suit){
+        this.rank = rank;
+        this.suit = suit;
     }
 
 }
