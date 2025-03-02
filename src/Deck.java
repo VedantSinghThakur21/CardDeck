@@ -25,4 +25,15 @@ class Deck {
             System.out.println(card);
         }
     }
+
+    //Find a Specific Card
+    public void findCard(String suit, String rank) {
+        for (Card card : deck) {
+            if (card.getSuit().equalsIgnoreCase(suit) && card.getRank().equalsIgnoreCase(rank)) {
+                System.out.println("Card found: " + rank + " of " + suit);
+                return;
+            }
+        }
+        System.out.println("Card not found!");
+    }
 }
