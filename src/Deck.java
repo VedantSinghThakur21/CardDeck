@@ -42,4 +42,13 @@ class Deck {
         Collections.shuffle(deck);
         System.out.println("Card Deck shuffled successfully.");
     }
+
+    // Compare Two Cards having Same Rank or
+    public void compareCard(Card card1, Card card2) {
+        if (card1.sameRank(card2)) {
+            System.out.println("The cards have the same rank.");
+        } else {
+            System.out.println("The cards have different ranks.");
+        }
+    }
 }
