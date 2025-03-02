@@ -18,4 +18,9 @@ class Card {
         return rank;
     }
 
+    // Check if two cards have the same rank
+    public boolean sameRank(Card other) {
+        return this.rank.equals(other.rank);
+    }
+
 }
