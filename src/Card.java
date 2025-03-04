@@ -23,4 +23,13 @@ class Card {
         return this.rank.equals(other.rank);
     }
 
+    //Check if two cards have same suit
+    public boolean sameSuit(Card other) {
+        return this.suit.equals(other.suit);
+    }
+
+    public void printCard() {
+        System.out.println(rank + " of " + suit);
+    }
+
 }
