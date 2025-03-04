@@ -20,7 +20,7 @@ class Deck {
         }
     }
 
-    public void displayDeck() {
+    public void printDeck() {
         for (Card card : deck) {
             card.printCard();
         }
@@ -63,11 +63,11 @@ class Deck {
     // Deal 5 Random Cards
     public void dealCard() {
         if (deck.size() < 5) {
-            System.out.println("⚠ Not enough cards left in the deck!");
+            System.out.println("Not enough cards left in the deck!");
             return;
         }
 
-        System.out.println("🃏 Dealing 5 random cards:");
+        System.out.println("Dealing 5 random cards:");
         Random rand = new Random();
         for (int i = 0; i < 5; i++) {
             Card card = deck.get(rand.nextInt(deck.size()));
