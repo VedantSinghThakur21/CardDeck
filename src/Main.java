@@ -64,7 +64,7 @@ public class Main {
                     System.out.print("Enter Suit & Rank of Second Card: ");
                     String suit2 = sc.nextLine();
                     String rank2 = sc.nextLine();
-                    deck.compareCard(new Card(suit1, rank1), new Card(suit2, rank2));
+                    deck.compareCard(new Card(rank1, suit1), new Card(rank2, suit2));
                     break;
 
                 case 6:
@@ -75,7 +75,7 @@ public class Main {
                     System.out.print("Enter Suit & Rank of Second Card: ");
                     String s2 = sc.nextLine();
                     String r2 = sc.nextLine();
-                    deck.sameCard(new Card(s1, r1), new Card(s2, r2));
+                    deck.sameCard(new Card(r1, s1), new Card(r2, s2));
                     break;
 
                 case 0:

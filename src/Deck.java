@@ -59,12 +59,16 @@ class Deck {
     }
     //method to check if two cards are from same suit
     public void sameCard(Card card1, Card card2) {
+        System.out.println("Comparing: " + card1.getRank() + " of " + card1.getSuit() + " & " +
+                card2.getRank() + " of " + card2.getSuit());
+
         if (card1.sameSuit(card2)) {
-            System.out.println(" The cards are from the same suit.");
+            System.out.println("The cards are from the same suit.");
         } else {
-            System.out.println(" The cards are from different suits.");
+            System.out.println("The cards are from different suits.");
         }
     }
+
 
     // Method to Deal 5 Random Cards from deck
     public void dealCard() {

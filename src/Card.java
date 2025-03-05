@@ -29,7 +29,7 @@ class Card {
 
     //method to check if two cards have same suit
     public boolean sameSuit(Card other) {
-        return this.suit.equals(other.suit);
+        return this.suit.equalsIgnoreCase(other.suit);
     }
 
     //method to print all details of a card
